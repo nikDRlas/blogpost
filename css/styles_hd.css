@@ -1,0 +1,49 @@
+header {
+    background-color: #FFE7E7;
+    color: #1044FF;
+    height: 20em;
+   
+}
+
+h1{
+font-family: 'Noticia Text';
+font-style: normal;
+font-weight: 700;
+font-size: 72px;
+line-height: 80px;
+font-size: 3em;
+}
+
+.subheader{
+    font-family: 'Source Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 0.2em;
+line-height: 24px;
+text-align: center;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+}
+
+.logo{
+    font-family: 'Noticia Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    letter-spacing: 4px;
+    color: #1044FF;
+}
+
+.sign-up > button{
+    box-sizing:border-box;
+    background: #1044FF;
+    border-radius: 10px;
+    font-family: 'Source Sans Pro';
+    padding: 0.5em 1em 0.5em 1em;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    border: none;
+
+}
+

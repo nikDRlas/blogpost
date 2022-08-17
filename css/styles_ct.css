@@ -1,0 +1,122 @@
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8em;
+    margin-top: 3em;
+    margin-left: 2.2em;
+    
+    
+}
+
+.example-card{
+
+    width: 15em;
+    height: 22em;
+}
+
+.picture-blogpost{
+    width: 100%;
+    border-radius: 5%;
+}
+
+figure{
+    margin-left: 0.3em;
+}
+
+.picture-location{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.5em;
+}
+
+.blogpost-description{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    color: #112A52;
+}
+
+.author{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-size: 0.5em;   
+    color: rgba(51, 51, 51, 0.65);
+    margin: 3em 0.5em;
+
+}
+
+.author img{
+    border-radius: 50%;
+    width: 20%;
+    margin-right: 1em;
+}
+
+
+aside{
+    margin-top: 3em;
+    grid-area: as;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.box {
+    border: 1px solid #1044FF;
+    margin-right: 3em;
+
+  
+
+    
+}
+
+aside h2{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-left: 0.5em;
+
+}
+
+
+
+.categories{
+    border-collapse: collapse;
+   width: 100%;
+   width: 13em;
+   margin-left: 0.5em;
+   margin-right: 0.5em;
+   
+}
+
+tr{
+    border-bottom: 1px solid #1068ff38;
+
+}
+
+.box-recent{
+    height: 30em;
+    padding-left: 0;
+
+    
+}
+
+.pic-recent{
+    width: 50%;
+    height: 20%;
+    border: 1px solid black;
+    border-radius: 10%;
+
+    margin-left: 0;
+    
+}
+
+.tags{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    word-spacing: 2em;
+    margin: 1em;
+}

@@ -1,6 +1,8 @@
-@import url(styles_hd.css);
-@import url(styles_ct.css);
+
+@import url("/Users/Niklas/Desktop/Masterschool/Übungen VSCODE/blogpost/css/styles_ct.css");
+
 main{
+
     font-size: 12px;
     display: grid;
     grid-template-rows: 1fr 3fr 3fr;
@@ -30,16 +32,17 @@ menu{
     margin-top: 0.1em;
 }
 
-ul > li {
-    display: inline;
-    margin: 0 1em 0 1em;
-    
-}
-
-
 .text-header{
     display: flex;
     justify-content: center;
+}
+
+aside{
+    grid-area: as;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    
 }
 
 
@@ -47,24 +50,90 @@ section{
     grid-area: ct;
 }
 
+.posts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 footer{
-    border: 1px solid black;
+    
     grid-area: fo;
     display: grid;
-    grid-template-rows: 3fr 3fr 1fr;
-    grid-template-columns: auto;
-    grid-template-areas: "con con con con" "so so so so"
-    "im im im im ";
+    grid-template-rows: 2fr 2fr 2fr 2fr 1fr;
+    grid-template-areas: "con con con con con"
+    "con con con con con"
+    "sol sol sol sol sol"
+    "sol sol sol sol sol"
+    "im im im im im";
 }
 
 .contact{
     grid-area: con;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+   
+}
+
+.contact-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em 0 2em 0;
+}
+
+.contact-buttons{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .social{
-    grid-area: so;
+    grid-area: sol;
+    display: grid;
+    grid-template-areas: "name name name links links";
+
 }
 
 .impressum{
     grid-area: im;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
 }
+
+.company-info-sm{
+    grid-area: name;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+    margin-left: 5em;
+}
+
+.further-links{
+   grid-area: links;
+   display: flex;
+   flex-direction: row;
+   align-items:  center;
+   gap: 8em;
+   margin-right: 5em;
+}
+
+.links-links{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+

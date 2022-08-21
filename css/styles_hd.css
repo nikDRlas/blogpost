@@ -46,4 +46,12 @@ text-transform: uppercase;
     border: none;
 
 }
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
 
+ul li{
+    display: inline;
+}

@@ -56,6 +56,17 @@ ul li{
     display: inline;
 }
 
+.mobile-menu{
+   display: none;
+}
+
+.menu-line{
+    background-color: #FFFFFF;
+    height: 3px;
+    width: 20px;
+    margin-bottom: 3px;
+}
+
 .cards{
     display: flex;
     flex-wrap: wrap;

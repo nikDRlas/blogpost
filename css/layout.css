@@ -1,8 +1,11 @@
-@import url("/Users/Niklas/Desktop/Masterschool/Übungen VSCODE/blogpost/css/media.css");
+
 @import url("/Users/Niklas/Desktop/Masterschool/Übungen VSCODE/blogpost/css/styles_ct.css");
 
-main{
+body{
+    width:100%;
+}
 
+main{
     font-size: 12px;
     display: grid;
     grid-template-rows: 1fr 3fr 3fr;
@@ -16,6 +19,7 @@ header {
     grid-area: hd;
     
 }
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -58,7 +62,6 @@ section{
 
 
 footer{
-    
     grid-area: fo;
     display: grid;
     grid-template-rows: 2fr 2fr 2fr 2fr 1fr;
@@ -74,7 +77,6 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 2em;
-   
 }
 
 .contact-me{
@@ -88,7 +90,6 @@ footer{
 .contact-buttons{
     display: flex;
     justify-content: space-around;
-    
 }
 
 .button{
@@ -101,7 +102,6 @@ footer{
     grid-area: sol;
     display: grid;
     grid-template-areas: "name name name links links";
-
 }
 
 .impressum{
@@ -109,7 +109,6 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-   
 }
 
 .company-info-sm{
@@ -117,7 +116,6 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
- 
     margin-left: 5em;
 }
 
@@ -133,7 +131,95 @@ footer{
 .links-links{
     display: flex;
     flex-direction: column;
-    
 }
 
+@media only screen and (max-width: 480px) {
 
+    main{
+        font-size: 12px;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 0.5fr;
+        grid-template-areas: "hd"
+        "ct"
+        "as"
+        "fo"
+    }
+   
+    footer{
+        grid-area: fo;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 2fr 2fr 2fr 1fr;
+        grid-template-areas: "con"
+        "con"
+        "sol"
+        "sol"
+        "im";
+    }
+
+    .box{
+        margin: 1em;
+    }
+
+    .contact-buttons{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button{
+        margin-bottom: 1em;
+        width: 50%;
+    }
+
+    nav{
+        align-items: center;
+    }
+
+    .mobile-menu{
+        display: block;
+        margin-right: 2em;
+    }
+
+    .menu-line{
+        background-color: #FFFFFF;
+        height: 3px;
+        width: 20px;
+        margin-bottom: 3px;
+    }
+
+    menu ul li{
+        display: none;
+    }
+
+    .sign-up{
+        display: none;
+    } 
+
+
+@media only screen and (max-width: 900px) {
+    
+    main{
+        font-size: 12px;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "hd hd"
+        "ct as"
+        "fo fo"
+    }
+   
+    footer{
+        grid-area: fo;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 2fr 2fr 2fr 1fr;
+        grid-template-areas: "con con"
+        "con con"
+        "sol sol"
+        "sol sol"
+        "im im";
+    }
+}
+}

@@ -1,28 +1,27 @@
 header {
     background-color: #FFE7E7;
     color: #1044FF;
-    height: 20em;
-   
+    height: 20em; 
 }
 
 h1{
-font-family: 'Noticia Text';
-font-style: normal;
-font-weight: 700;
-font-size: 72px;
-line-height: 80px;
-font-size: 3em;
+    font-family: 'Noticia Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 80px;
+    font-size: 3em;
 }
 
 .subheader{
     font-family: 'Source Sans Pro';
-font-style: normal;
-font-weight: 400;
-font-size: 0.2em;
-line-height: 24px;
-text-align: center;
-letter-spacing: 0.1em;
-text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.2em;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 .logo{
@@ -44,8 +43,8 @@ text-transform: uppercase;
     font-size: 14px;
     color: #FFFFFF;
     border: none;
-
 }
+
 ul{
     display: flex;
     justify-content: center;
@@ -73,12 +72,9 @@ ul li{
     gap: 0.8em;
     margin-top: 3em;
     margin-left: 2.2em;
-    
-    
 }
 
 .example-card{
-
     width: 15em;
     height: 22em;
 }
@@ -111,13 +107,13 @@ address{
     display: flex;
     align-items: center;
 }
+
 .author{
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-size: 0.5em;   
     color: rgba(51, 51, 51, 0.65);
     margin: 3em 0.5em;
-
 }
 
 .author img{
@@ -126,10 +122,8 @@ address{
     margin-right: 0.5em;
 }
 
-
 aside{
     margin-top: 3em;
-    
 }
 
 .box {
@@ -137,8 +131,6 @@ aside{
     margin-right: 3em;
     padding: 0.5em;
     border-radius: 5%;
-
-    
 }
 
 aside h2{
@@ -147,27 +139,21 @@ aside h2{
     font-weight: 700;
     font-size: 1.5em;
     margin-left: 0.5em;
-
 }
-
-
 
 .categories{
     border-collapse: collapse;
-   width: 100%;
-   width: 13em;
-   margin-left: 0.5em;
-   margin-right: 0.5em;
-   
+    width: 100%;
+    width: 13em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 
 tr{
     border-bottom: 1px solid #1068ff38;
-
 }
 
 .recent-photo-text{
-  
     display: flex;
     gap: 0.5em;
     justify-content: center;
@@ -178,9 +164,7 @@ tr{
     height: 30px;
     border: 1px solid black;
     border-radius: 10%;
-
     margin-left: 0;
-    
 }
 
 .tags{
@@ -192,7 +176,6 @@ tr{
 }
 
 .contact{
-    
     background-color: #FFE7E7;
 }
 
@@ -230,12 +213,11 @@ tr{
 
 .social{
     background-color: #1044FF;
-
 }
+
 .company-info-sm{
     width: 33%;
     margin: 2em;
-
 }
 
 .company-info h2{
@@ -273,4 +255,8 @@ a{
 
 figure a{
     color: black;
+}
+
+quote{
+    font-style: italic;
 }

@@ -1,0 +1,227 @@
+@import url("/css/post.css");
+@import url("/css/styles_ct.css");
+
+main{
+    font-size: 12px;
+    display: grid;
+    grid-template-rows: 0.5fr 4fr 3fr;
+    grid-template-areas: "hd hd hd hd"
+    "ct ct ct as"
+    "fo fo fo fo"
+}
+
+header {
+    grid-area: hd;
+    height: 40%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo , .sign-up{
+    margin: 0 2em 0 2em;
+}
+
+.sign-up button{
+    height: 2em;
+    margin-bottom: 0.5em;
+}
+
+
+menu{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.1em;
+}
+
+.text-header{
+    display: flex;
+    justify-content: center;
+}
+
+aside{
+    grid-area: as;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+    
+section{
+    grid-area: ct;
+}
+
+.posts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    grid-area: fo;
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr 2fr 1fr;
+    grid-template-areas: "con con con con con"
+    "con con con con con"
+    "sol sol sol sol sol"
+    "sol sol sol sol sol"
+    "im im im im im";
+}
+
+.contact{
+    grid-area: con;
+    display: flex;
+    flex-direction: column;
+    gap: 2em; 
+}
+
+.contact-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em 0 2em 0;
+}
+
+.contact-buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social{
+    grid-area: sol;
+    display: grid;
+    grid-template-areas: "name name name links links";
+}
+
+.impressum{
+    grid-area: im;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-info-sm{
+    grid-area: name;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5em;
+}
+
+.further-links{
+   grid-area: links;
+    display: flex;
+   flex-direction: row;
+   align-items:  center;
+   gap: 8em;
+   margin-right: 5em;
+}
+
+.links-links{
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 480px) {
+
+    main{
+        font-size: 12px;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 0.5fr;
+        grid-template-areas: "hd"
+        "ct"
+        "as"
+        "fo"
+    }
+   
+    footer{
+        grid-area: fo;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 2fr 2fr 2fr 1fr;
+        grid-template-areas: "con"
+        "con"
+        "sol"
+        "sol"
+        "im";
+    }
+
+    .box{
+        margin: 1em;
+    }
+
+    .contact-buttons{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button{
+        margin-bottom: 1em;
+        width: 50%;
+    }
+
+    nav{
+        align-items: center;
+        background-color: #FFE7E7;
+    }
+
+    .mobile-menu{
+        display: block;
+        margin-right: 2em;
+    }
+
+    .menu-line{
+        background-color: #FFFFFF;
+        height: 3px;
+        width: 20px;
+        margin-bottom: 3px;
+    }
+
+    menu ul li{
+        display: none;
+    }
+
+    .sign-up{
+        display: none;
+    } 
+}
+
+@media only screen and (max-width: 900px) {
+    
+    main{
+        font-size: 12px;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "hd hd"
+        "ct as"
+        "fo fo"
+    }
+   
+    footer{
+        grid-area: fo;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 2fr 2fr 2fr 1fr;
+        grid-template-areas: "con con"
+        "con con"
+        "sol sol"
+        "sol sol"
+        "im im";
+    }
+    nav{
+        
+        background-color: #FFE7E7;
+    }
+}

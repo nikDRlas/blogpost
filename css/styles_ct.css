@@ -79,6 +79,10 @@ ul li{
     height: 22em;
 }
 
+.article-text{
+    font-size: large;
+}
+
 .picture-blogpost{
     width: 100%;
     border-radius: 5%;

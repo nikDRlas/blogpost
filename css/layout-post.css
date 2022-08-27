@@ -2,7 +2,7 @@
 @import url("/css/styles_ct.css");
 
 main{
-    font-size: 12px;
+   
     display: grid;
     grid-template-rows: 0.5fr 4fr 3fr;
     grid-template-areas: "hd hd hd hd"
@@ -134,10 +134,9 @@ footer{
 @media only screen and (max-width: 480px) {
 
     main{
-        font-size: 12px;
         display: grid;
         grid-template-rows: 1fr;
-        grid-template-columns: 0.5fr;
+        grid-template-columns: 100%;
         grid-template-areas: "hd"
         "ct"
         "as"
@@ -147,8 +146,8 @@ footer{
     footer{
         grid-area: fo;
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 2fr 2fr 2fr 1fr;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
         grid-template-areas: "con"
         "con"
         "sol"
@@ -158,6 +157,10 @@ footer{
 
     .box{
         margin: 1em;
+    }
+
+    .categories{
+        width: 100%;
     }
 
     .contact-buttons{
@@ -195,24 +198,38 @@ footer{
     .sign-up{
         display: none;
     } 
+
+    .further-links{
+        grid-area: links;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin-right: 5em;
+        margin-bottom: 1em;
+    }
+
+    .impressum{
+        padding: 2em;
+    }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 601px) and (max-width: 900px) {
     
     main{
-        font-size: 12px;
+        
         display: grid;
         grid-template-rows: auto;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 50% 50%;
         grid-template-areas: "hd hd"
-        "ct as"
-        "fo fo"
+        "ct ct"
+        "as as"
+        "fo  fo"
     }
    
     footer{
         grid-area: fo;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 50% 50%;
         grid-template-rows: 2fr 2fr 2fr 2fr 1fr;
         grid-template-areas: "con con"
         "con con"
@@ -220,8 +237,26 @@ footer{
         "sol sol"
         "im im";
     }
+
+    .categories{
+        width: 100%;
+    }
+
+    .box{
+        margin: 1em;
+    }
+
     nav{
         
         background-color: #FFE7E7;
     }
+
+    .contact{
+        padding-bottom: 2em;
+    }
+
+    .article-text{
+        font-size: 2em;
+    }
+
 }
